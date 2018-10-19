@@ -15,6 +15,9 @@ module.exports = app => {
         } catch(msg) {
             res.status(400).send(msg)
         }
+
+
+        
         if(article.id) {
             app.db('articles')
                 .update(article)
